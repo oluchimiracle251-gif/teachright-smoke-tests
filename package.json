@@ -1,0 +1,11 @@
+{
+  "name": "teachright-smoke-tests",
+  "version": "1.0.0",
+  "description": "Smoke tests for the TeachRight website",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}
