@@ -10,8 +10,8 @@ test('Homepage loads successfully', async ({ page }) => {
 test('Sign-in form is visible', async ({ page }) => {
   await page.goto(SITE_URL);
   await expect(page.getByText('Sign In to TeachRight')).toBeVisible();
-  await expect(page.getByPlaceholder('Email Address')).toBeVisible();
-  await expect(page.getByPlaceholder('Password')).toBeVisible();
+  await expect(page.getByPlaceholder('Email Address').first()).toBeVisible();
+  await expect(page.getByPlaceholder('Password').first()).toBeVisible();
 });
 
 test('Sign-up link is visible and clickable', async ({ page }) => {
